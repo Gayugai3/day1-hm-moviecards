@@ -55,12 +55,15 @@ function Films({ name, poster, rating, review }) {
     <section className="container">
       <img className="poster" src={poster} alt={name} />
 
-      <h4 className="name-rating">
-        {name}
-        <span>{rating}</span>
-      </h4>
+      {/* <h3 className="header"></h3> */}
 
-      <p>{review}</p>
+      <div className="header">
+        {name}
+        <span><i class="fa-solid fa-star"></i>
+        {rating}</span>
+      </div>
+
+      <p className="review-sec">{review}</p>
     </section>
   );
 }
